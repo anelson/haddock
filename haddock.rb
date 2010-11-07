@@ -71,7 +71,9 @@ word_counts_by_length = get_word_counts_by_length(WORDLIST)
     #that log2(x) = logn(x) / logn(2)
     strength_in_bits = Math.log(num_permutations) / LOG2
 
-    puts "For password length #{length}, there are #{num_permutations} possible passwords, key strength is %.2f bits" % strength_in_bits
-
+    print "For password length #{length}, "
+    print "there are %.2e possibles, " % num_permutations
+    print "strength is %.2f bits" % strength_in_bits
+    puts
 end
 
